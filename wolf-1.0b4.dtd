@@ -1,0 +1,17 @@
+<!--Based on this article http://blog.onyme.com/etude-de-lontologie-wordnet-libre-du-francais-wolf/ and simplyfied from the standard debvisdic-strict.dtd-->
+<!ELEMENT WN (SYNSET+)>
+<!ELEMENT SYNSET (ID, POS, SYNONYM, ILR*, BCS?, DEF?, USAGE*,DOMAIN?,SUMO*)>
+<!ELEMENT ID (#PCDATA)>
+<!ELEMENT POS (#PCDATA)>
+<!ELEMENT SYNONYM (LITERAL+)>
+<!ELEMENT ILR (#PCDATA)>
+<!ATTLIST ILR
+          type CDATA #REQUIRED>
+<!ELEMENT BCS (#PCDATA)>
+<!ELEMENT DEF (#PCDATA)>
+<!ELEMENT USAGE (#PCDATA)>
+<!ELEMENT LITERAL (#PCDATA)>
+<!ATTLIST LITERAL
+          lnote CDATA #IMPLIED
+          sense CDATA #IMPLIED>
+<!ELEMENT TYPE (#PCDATA)>
